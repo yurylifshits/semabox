@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Semabox | {% block subtitle %}Natural reading experience {% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon"> 
+
+{% block extrahead %}{% endblock %}
+
+	</head>
+	<body>
+	
+
+
+<div id="outer"> 
+    <div id="inner">
+
+	
+<center>
+<div id="wrap" style="width: 980px; padding: 0px 10px 0px 10px; text-align:left;">
+
+{% block wrap %}
+
+		<div id="sidebar">
+        	{% block sidebar %}{% endblock %}
+		</div>
+		<div id="content">
+        	{% block content %}{% endblock %}
+		</div>
+
+{% endblock %}
+
+</div>
+</center>
+
+</div></div>
+
+		{% block lastblock %}
+		{% endblock %}
+		
+
+	</body>
+</html>
+
+
